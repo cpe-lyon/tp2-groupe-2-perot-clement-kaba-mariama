@@ -46,7 +46,20 @@ dossier personnel d’après bash)
    * echo PATH=$PATH:~/script/ >> ~/.bashrc && source ~/.bashrc
 
   # Exercice 2. Contrôle de mot de passe
-  
+  ```bash
+#!/bin/bash
+
+    PASSWORD='motdepasse'
+    echo -n -e "Votre mot de passe :\n"
+    read -s
+    mdp="$REPLY"
+    if test "$PASSWORD" = "$mdp"
+    then echo -n -e "Mot de passe bon\n"
+    else echo -n -e "Mot de passe faux\n"
+    fi
+    exit 0
+
+ ```
   # Exercice 3. Expressions rationnelles
  
  Script bash :
