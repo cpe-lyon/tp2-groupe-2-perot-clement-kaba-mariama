@@ -45,22 +45,27 @@ dossier personnel d’après bash)
    * Ajoutez le chemin vers script à votre PATH de manière permanente.
    * echo PATH=$PATH:~/script/ >> ~/.bashrc && source ~/.bashrc
 
-  # Exercice 2. Contrôle de mot de passe
-  ```bash
+# Exercice 2. Contrôle de mot de passe
+Script bash :
+ ```bash
 #!/bin/bash
 
     PASSWORD='motdepasse'
+    
     echo -n -e "Votre mot de passe :\n"
     read -s
     mdp="$REPLY"
+    
     if test "$PASSWORD" = "$mdp"
-    then echo -n -e "Mot de passe bon\n"
-    else echo -n -e "Mot de passe faux\n"
+    	then echo -n -e "Mot de passe bon\n"
+    else 
+    	echo -n -e "Mot de passe faux\n"
     fi
+    
     exit 0
 
  ```
-  # Exercice 3. Expressions rationnelles
+# Exercice 3. Expressions rationnelles
  
  Script bash :
   ```bash
@@ -103,4 +108,26 @@ n=$1
 
 echo `fact $1`
 ```
+# Exercice 6 : Juste prix 
 
+Script bash :
+```bash
+    NBalea=$RANDOM
+    let "NBalea%=1001"
+    
+    echo $NBalea
+    echo -e "Devinez le nombre choisi :"
+    read i
+    
+    while : ; do
+        if test $i -lt $NBalea 
+        	then echo -e "C'est plus !\n"
+        elif test $i -gt $NBalea
+        	then exho -e "C'est moins !\n"
+        else 
+		echo -e "Gagné !\n" ; break
+        fi
+        read i
+    done
+    exit 0
+```
