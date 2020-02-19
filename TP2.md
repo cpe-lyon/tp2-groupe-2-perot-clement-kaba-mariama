@@ -50,8 +50,8 @@ dossier personnel d’après bash)
   # Exercice 3. Expressions rationnelles
  
  Script bash :
-  '''bash
-       #!/bin/bash
+  '''
+      #!/bin/bash
       function is_number()
 	{
 		re='^[+-]?[0-9]+([.][0-9]+)?$'
