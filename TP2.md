@@ -73,7 +73,7 @@ dossier personnel d’après bash)
 	fi
 
  ```
-# factorielle
+# Exercice 5. Factorielle
 Script bash :
 ```bash
 #/bin/bash
