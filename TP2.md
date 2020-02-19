@@ -1,10 +1,18 @@
 # Exercice 1. Variables d’environnement
 
 1. Dans quels dossiers bash trouve-t-il les commandes tapées par l’utilisateur ?
+ (which ls)
 2. Quelle variable d’environnement permet à la commande cd tapée sans argument de vous ramener dans
 votre répertoire personnel ?
+(printenv HOME)
 3. Explicitez le rôle des variables LANG, PWD, OLDPWD, SHELL et _.
+ * la varible LANG  : G détermine la langue que les logiciels utilisent pour communiquer avec l’utilisateur
+ *  PWD : Afiche le repertoire courant dans le quel on se situe
+ * OLDPWD:  contient le chemin absolu vers le répertoire courant précédent (permet de savoir d'où on vient).
+ * SHELL : 
+ * _ : 
 4. Créez une variable locale MY_VAR (le contenu n’a pas d’importance). Vérifiez que la variable existe.
+
 5.Tapez ensuite la commande bash. Que fait-elle ? La variable MY_VAR existe-t-elle ? Expliquez. A la fin
 de cette question, tapez la commande exit pour revenir dans votre session initiale.
 6. Transformez MY_VAR en une variable d’environnement et recommencez la question précédente. Expliquez.
