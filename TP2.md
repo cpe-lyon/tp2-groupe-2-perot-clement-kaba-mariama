@@ -12,6 +12,8 @@ votre répertoire personnel ?
  * SHELL : 
  * _ : 
 4. Créez une variable locale MY_VAR (le contenu n’a pas d’importance). Vérifiez que la variable existe.
+  (export MY_VAR="abcdef")
+  
 
 5.Tapez ensuite la commande bash. Que fait-elle ? La variable MY_VAR existe-t-elle ? Expliquez. A la fin
 de cette question, tapez la commande exit pour revenir dans votre session initiale.
