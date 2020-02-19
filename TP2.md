@@ -43,9 +43,11 @@ dossier personnel d’après bash)
  (echo -e \$HOME= $HOME)
   # Programmation Bash
    * Ajoutez le chemin vers script à votre PATH de manière permanente.
+   * echo PATH=$PATH:~/script/ >> ~/.bashrc && source ~/.bashrc
+
   # Exercice 2. Contrôle de mot de passe
   
-   
+  # Exercice 3. Expressions rationnelles
    
    
 
