@@ -50,7 +50,7 @@ dossier personnel d’après bash)
   # Exercice 3. Expressions rationnelles
  
  Script bash :
-  '''
+  ```bash
       #!/bin/bash
       function is_number()
 	{
@@ -63,6 +63,6 @@ dossier personnel d’après bash)
 	}
 	is_number $1
  
- '''
+ ```
 
 
