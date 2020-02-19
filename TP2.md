@@ -74,7 +74,8 @@ dossier personnel d’après bash)
 
  ```
 # factorielle
-
+Script bash :
+```bash
 #/bin/bash
 fact ()
 { 
@@ -88,5 +89,5 @@ n=$1
 }
 
 echo `fact $1`
-
+```
 
