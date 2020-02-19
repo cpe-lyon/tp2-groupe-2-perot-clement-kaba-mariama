@@ -111,7 +111,9 @@ echo `fact $1`
 # Exercice 6 : Juste prix 
 
 Script bash :
+
 ```bash
+#/bin/bash
     NBalea=$RANDOM
     let "NBalea%=1001"
     
@@ -131,3 +133,19 @@ Script bash :
     done
     exit 0
 ```
+# Exercice 8 : combinaisons de couleurs possibles
+
+Script bash :
+
+```bash
+#/bin/bash
+    echo -e 'FG\BG \t 40 \t 41 \t 42 \t 43 \t 44 \t 45 \t 46 \t 47'
+    for attr in 0 1 4 5 7 30 31 32 33 34 35 36 37; do
+            printf $attr
+            for back in 40 41 42 43 44 45 46 47; do
+                    printf '\t\033[%s;%smBash\033[0m' $attr $back
+            done
+            printf '\n'
+    done
+    exit 0
+ ```
