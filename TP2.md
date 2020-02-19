@@ -51,18 +51,27 @@ dossier personnel d’après bash)
  
  Script bash :
   ```bash
-      #!/bin/bash
-      function is_number()
+#!/bin/bash
+
+	function is_number()
 	{
 		re='^[+-]?[0-9]+([.][0-9]+)?$'
+
 		if ! [[ $1 =~ $re ]] ; then
 			return 1
 		else
 			return 0
 		fi
 	}
+
 	is_number $1
- 
+
+	if [ $? -eq 0 ] ; then
+		echo  "nombre reel"
+	else
+		echo  "pas un nombre reel. ERREUR"
+	fi
+
  ```
 
 
